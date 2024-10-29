@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio | Rarug Francisco</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Imagenes/1606925670701_992832461-01.jpeg">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__profile">
+            <div id="profile-popup" class="profile-popup">
+                <span class="close">&times;</span>
+                <img src="Imagenes/1606925670701_992832461-01.jpeg" alt="Foto de perfil ampliada"
+                    class="profile-popup__image">
+            </div>
+        </div>
+        <img src="Imagenes/1606925670701_992832461-01.jpeg" alt="Foto de perfil" class="profile__image">
+
+        <div class="header__logo">
+            <button class="buttonTitulo" data-text="Awesome">
+                <span class="actual-text">&nbsp;Portafolio&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;Portafolio&nbsp;</span>
+            </button>
+        </div>
+
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="nav__menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="/index.html">Inicio</a></li>
+                <li class="nav__item"><a class="nav__link" href="/Secciones/proyectos.html">Proyectos</a></li>
+                <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+                <li class="nav__item"><a class="nav__link" href="/Secciones/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__social-icons">
+            <a href="https://github.com/francisco-rarug" target="_blank" rel="noopener" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/francisco-rarug-386942268/" target="_blank" rel="noopener"
+                class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/5491156936839" target="_blank" rel="noopener" class="social-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-about" id="about">
+            <div class="container">
+                <h2 class="section__title">Acerca de mí 🙋🏼‍♂️</h2>
+                <p class="section__description">Hola, mi nombre es Francisco y soy un desarrollador con experiencia
+                    en
+                    distintas tecnologias de la programacion. Me apasiona crear sitios web y aplicaciones que sean
+                    intuitivas, fáciles de
+                    usar y estéticamente atractivas.
+                </p>
+                <h3> 👇 Conoceme mas descargando mi curriculum vitae </h3>
+                <a href="Archivos\CV-RarugFrancisco.pdf"<button download class="boton-descarga">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="20" viewBox="0 0 640 512">
+                        <path
+                            d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"
+                            fill="white"></path>
+                    </svg>
+                    <span>Descargar Curriculum</span>
+                </button></a>
+            </div>
+        </section>
+
+        <section class="proyectos" id="proyectos">
+            <div class="card">
+                <div class="image-box">
+                    <img src="/Imagenes/Juego_preview.png" alt="chano">
+                </div>
+                <div class="content">
+                    <h2 class="data-producto">"Chano"</h2>
+                    <p>Un juego 2d hecho con la libreria pygames sobre un robot</p>
+                    <button class="btn-agregar-carrito">Mas informacion</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img src="/Imagenes/GamerStacker.jpg" alt="GamerStacker">
+                </div>
+                <div class="content">
+                    <h2 class="data-producto">GamerStacker</h2>
+                    <p>Pagina sobre tienda de juegos con carrito de compras, base de datos y panel de admin</p>
+                    <button class="btn-agregar-carrito">Mas Informacion</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-box">
+                    <img src="/Imagenes/Screenshot_1.png" alt="Pikachu">
+                </div>
+                <div class="content">
+                    <h2 class="data-producto">Pikachu</h2>
+                    <p>Aplicacion de consumo de la Api de pokemon</p>
+                    <button class="btn-agregar-carrito">Mas informacion</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="mas-productos-container">
+            <a href="/Secciones/proyectos.html"> <button class="animated-button">
+                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                        </path>
+                    </svg>
+                    <span class="text">Mas proyectos</span>
+                    <span class="circle"></span>
+                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                        </path>
+                    </svg>
+                </button></a>
+
+        </div>
+
+        <section class="section-skills" id="skills">
+            <div class="container">
+                <h2 class="section__title">Skills 🦾</h2>
+                <div class="skills__grid">
+                    <div class="skill__card">
+                        <span class="iconify skill__icon" data-icon="logos:html-5" data-inline="false"></span>
+                        <span class="iconify skill__icon" data-icon="logos:css-3" data-inline="false"></span>
+                        <h3 class="skill__title">HTML y CSS</h3>
+                        <div class="skill__description">
+                            <p>Tengo conocimientos sólidos en la estructura básica de HTML, etiquetas semánticas y el
+                                uso de elementos para crear
+                                contenido web accesible y bien estructurado. También estoy familiarizado con el uso
+                                de formularios, tablas y multimedia en HTML.
+                            </p>
+                            <p>
+                                Tengo experiencia en CSS y puedo crear diseños atractivos y responsivos utilizando
+                                hojas de estilo en cascada. Estoy familiarizado con los selectores, propiedades y
+                                valores de CSS, y puedo utilizar técnicas como flexbox y CSS Grid para crear diseños
+                                flexibles y fluidos. Además, tengo conocimientos en estilos avanzados como
+                                animaciones CSS y media queries para adaptar el diseño a diferentes dispositivos y
+                                tamaños de pantalla.
+                            </p>
+                        </div>
+                        <button class="skill__button" onclick="toggleDescription(this)">Ver información</button>
+                    </div>
+                    <div class="skill__card">
+                        <span class="iconify skill__icon" data-icon="logos:javascript" data-inline="false"></span>
+                        <h3 class="skill__title">JavaScript</h3>
+                        <div class="skill__description">
+                            <p>Tengo experiencia en JavaScript y me siento cómodo trabajando con este lenguaje de
+                                programación tanto en el frontend como en el backend. Tengo
+                                conocimientos sólidos en el uso de este lenguaje para manipular el DOM, interactuar con
+                                API, realizar peticiones AJAX y crear interacciones dinámicas en sitios web.
+                                Siempre me mantengo actualizado sobre las últimas características y prácticas de
+                                JavaScript para ofrecer soluciones eficientes y de alta calidad.</p>
+                        </div>
+                        <button class="skill__button" onclick="toggleDescription(this)">Ver información</button>
+                    </div>
+                    <div class="skill__card">
+                        <span class="iconify skill__icon" data-icon="logos:python" data-inline="false"></span>
+                        <h3 class="skill__title">Python</h3>
+                        <div class="skill__description">
+                            <p>Estoy estudiando Python y tengo conocimientos básicos en el lenguaje. Me siento
+                                cómodo trabajando con conceptos fundamentales como listas, diccionarios, bucles y
+                                estructuras de control. A medida que continúo mi aprendizaje, estoy emocionado por
+                                explorar áreas como la programación orientada a objetos y mas cosas que me puedan
+                                sorprender.
+                            </p>
+                            <p>Python es un lenguaje versátil y
+                                poderoso, y estoy entusiasmado por seguir mejorando mis habilidades y aplicarlo en
+                                una amplia gama de proyectos.
+                            </p>
+                        </div>
+                        <button class="skill__button" onclick="toggleDescription(this)">Ver información</button>
+                    </div>
+                    <div class="skill__card">
+                        <span class="iconify skill__icon" data-icon="logos:c-plusplus" data-inline="false"></span>
+                        <h3 class="skill__title">C++</h3>
+                        <div class="skill__description">
+                            <p>Tengo experiencia en programación en C++ y su aplicación en el entorno de Arduino.
+                                Utilizo este lenguaje para desarrollar proyectos de electrónica y programación de
+                                microcontroladores utilizando la plataforma Arduino. Conozco los fundamentos del
+                                lenguaje y puedo escribir código eficiente y estructurado. Utilizo la librería
+                                Arduino para acceder a los periféricos y componentes electrónicos, como sensores y
+                                actuadores, y desarrollar proyectos interactivos.
+                            </p>
+                            <p>Estoy entusiasmado por seguir aprendiendo y explorando nuevas posibilidades con este
+                                lenguaje y
+                                poder seguir adentrandome en el campo de la electrónica y la robótica.</p>
+                        </div>
+                        <button class="skill__button" onclick="toggleDescription(this)">Ver información</button>
+                    </div>
+
+                    <div class="skill__card">
+                        <span class="iconify skill__icon" data-icon="logos:c-sharp" data-inline="false"></span>
+                        <h3 class="skill__title">C#</h3>
+                        <div class="skill__description">
+                            <p>
+                                Tengo experiencia en programación con C#, habiendo utilizado sus fundamentos y
+                                herramientas de desarrollo en Visual Studio. He aplicado estos conocimientos en la
+                                creación de una simulación de una fábrica, donde modelé diversas entidades y gestioné
+                                sus interacciones. Estoy comprometido a seguir las mejores prácticas en C# y busco
+                                constantemente expandir mis habilidades en el desarrollo de software.
+                            <p>
+                        </div>
+                        <button class="skill__button" onclick="toggleDescription(this)">Ver información</button>
+                    </div>
+
+                    <div class="skill__card">
+                        <span class="iconify skill__icon" data-icon="logos:git-icon" data-inline="false"></span>
+                        <span class="iconify skill__icon" data-icon="logos:github-icon" data-inline="false"></span>
+                        <h3 class="skill__title">Git y Github</h3>
+                        <div class="skill__description">
+                            <p>Tengo experiencia en el uso de Git y GitHub como herramientas de control de versiones
+                                y colaboración en proyectos de desarrollo. Utilizo Git para realizar un seguimiento
+                                eficiente de los cambios en el código fuente y para gestionar ramas de desarrollo de
+                                forma efectiva. Además, estoy familiarizado con los comandos básicos de Git, como
+                                clonar repositorios, crear ramas, fusionar cambios y solucionar conflictos. También
+                                utilizo GitHub como plataforma para alojar mis proyectos y colaborar con otros
+                                desarrolladores. Puedo crear y gestionar repositorios, realizar solicitudes de
+                                extracción y revisar el código de otros colaboradores. Estoy comprometido a seguir
+                                buenas prácticas de control de versiones y utilizar Git y GitHub de manera efectiva
+                                para optimizar el flujo de trabajo y facilitar la colaboración en equipo.</p>
+                        </div>
+                        <button class="skill__button" onclick="toggleDescription(this)">Ver información</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__item">
+                        <h3 class="footer__title">Otros lugares para contactarme</h3>
+                        <ul class="footer__list">
+                            <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKBzzrRrLGGWNLqGfMzrSNrjJQxrpLKghJvSQxDqSkpVkJSMhHnBZqTcRbVFwhwZWVfHKtL"
+                                    target="_blank"><span class="iconify" data-icon="mdi:email-outline"
+                                        style="font-size: 24px;"></span>
+                                    Gmail</a></li>
+                            <li><a href="https://www.linkedin.com/in/francisco-rarug-386942268/" target="_blank"><i
+                                        class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://wa.me/+5491156936839" target="_blank"><i class="fab fa-whatsapp"></i>
+                                    WhatsApp</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <h3 class="footer__title">Sobre mí</h3>
+                        <p class="footer__description">¡Hola! Soy Francisco, un apasionado del desarrollo web y la
+                            tecnología en general. En este sitio comparto algunos de mis proyectos y habilidades. Si
+                            quieres contactarme, no dudes en hacerlo a través de alguna de mis redes sociales o a traves
+                            del formulario de contacto.</p>
+                        <hr class="footer__separator">
+                        <p class="footer__rights">&copy; 2023 Francisco Rarug. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <button id="backToTop" class="back-to-top hidden">▲</button>
+
+
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script src="portafolio.js"></script>
+
+</body>
+
+</html>
