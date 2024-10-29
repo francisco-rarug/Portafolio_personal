@@ -11,7 +11,6 @@ body {
 }
 
 /* Estilos para el encabezado */
-
 .header {
     background-color: #f7f7f7;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -181,7 +180,6 @@ body {
     color: #ff6b6b;
 }
 
-
 .buttonTitulo {
     margin: 0;
     height: auto;
@@ -263,7 +261,8 @@ body {
     letter-spacing: 1px;
 }
 
-.form__input, .form__textarea {
+.form__input,
+.form__textarea {
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
@@ -276,7 +275,8 @@ body {
     box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.form__input:focus, .form__textarea:focus {
+.form__input:focus,
+.form__textarea:focus {
     border-color: #66c0f4;
     outline: none;
     background-color: rgba(255, 255, 255, 0.2);
@@ -383,59 +383,156 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #007bff;
-
 }
 
 ::-webkit-scrollbar-track {
     background-color: #f5f5f5;
 }
 
-.popup {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
 }
 
-.popup-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
-    text-align: center;
-    position: relative;
+.up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
 }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 10px;
-    margin-right: 15px;
+.down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.card1 {
+    width: 150px;
+    height: 150px;
+    outline: none;
+    border: none;
+    background: gray;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+
+.instagram {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    fill: #cc39a4;
+}
+
+.card2 {
+    width: 150px;
+    height: 150px;
+    outline: none;
+    border: none;
+    background: gray;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+
+.twitter {
+    margin-top: 1.5em;
+    margin-left: -.9em;
+    fill: #03A9F4;
+}
+
+.card3 {
+    width: 150px;
+    height: 150px;
+    outline: none;
+    border: none;
+    background: gray;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+
+.github {
+    margin-top: -.6em;
+    margin-left: 1.2em;
+}
+
+.card4 {
+    width: 150px;
+    height: 150px;
+    outline: none;
+    border: none;
+    background: gray;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+
+.discord {
+    margin-top: -.9em;
+    margin-left: -1.2em;
+    fill: #8c9eff;
+}
+
+.card1:hover {
     cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
 }
 
+.card1:hover .instagram {
+    fill: white;
+}
+
+.card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #03A9F4;
+}
+
+.card2:hover .twitter {
+    fill: white;
+}
+
+.card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: black;
+}
+
+.card3:hover .github {
+    fill: white;
+}
+
+.card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+    fill: white;
+}
+
+@media (max-width: 768px) {
+    .section-contact {
+        flex-direction: column;
+    }
+
+    .contact__form,
+    .main {
+        max-width: 100%;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .nav__menu {
         display: none;
-        /* Ocultar el menú de navegación en pantallas pequeñas */
     }
 
     .menu-toggle {
-        display: block;
-        /* Mostrar el botón hamburguesa */
+        display: block; 
         background: none;
         border: none;
         font-size: 24px;
@@ -448,8 +545,7 @@ body {
     }
 
     .nav__menu.active {
-        display: block;
-        /* Mostrar el menú cuando esté activo */
+        display: block; 
         background-color: #f7f7f7;
         position: absolute;
         top: 100%;

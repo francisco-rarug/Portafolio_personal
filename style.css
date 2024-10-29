@@ -813,6 +813,9 @@ p {
     .content p {
         font-size: 0.5rem;
     }
+    .boton-descarga{
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 768px) {
