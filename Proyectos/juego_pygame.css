@@ -305,12 +305,12 @@ a{
         margin: 0;
         padding: 0;
         width: 100%;
-        overflow-x: hidden; /* Evita el desplazamiento horizontal */
+        overflow-x: hidden; 
     }
     
     .footer {
         width: 100%;
-        box-sizing: border-box;  /* Asegura que el padding y el borde se incluyan en el ancho total */
+        box-sizing: border-box;
     }
     
     .nav__list {

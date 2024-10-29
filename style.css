@@ -310,16 +310,13 @@ body {
 
 
 .mas-productos-container {
+    background-color: rgb(236, 236, 236);
     text-align: center;
     margin: 0 auto;
     width: 100%;
     margin-bottom: 20px;
-}
-
-.mas-productos-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
     align-items: center;
 }
 
@@ -415,8 +412,8 @@ a {
     opacity: 1;
 }
 
-/* Seccion de proyectos */
 .proyectos {
+    background-color: rgb(236, 236, 236);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
