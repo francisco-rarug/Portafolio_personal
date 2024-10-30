@@ -7,34 +7,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-function toggleDescription(button) {
-    var card = button.parentNode;
-    var description = card.querySelector(".skill__description");
-    var allCards = document.querySelectorAll(".skill__card");
+// function toggleDescription(button) {
+//     var card = button.parentNode;
+//     var description = card.querySelector(".skill__description");
+//     var allCards = document.querySelectorAll(".skill__card");
 
-    // Cerrar todas las tarjetas excepto la actual
-    allCards.forEach(function (currentCard) {
-        var currentDescription = currentCard.querySelector(".skill__description");
-        var currentButton = currentCard.querySelector(".skill__button");
+//     // Cerrar todas las tarjetas excepto la actual
+//     allCards.forEach(function (currentCard) {
+//         var currentDescription = currentCard.querySelector(".skill__description");
+//         var currentButton = currentCard.querySelector(".skill__button");
 
-        if (currentCard !== card) {
-            currentCard.classList.remove("active");
-            currentDescription.style.display = "none";
-            currentButton.innerText = "Ver información";
-        }
-    });
+//         if (currentCard !== card) {
+//             currentCard.classList.remove("active");
+//             currentDescription.style.display = "none";
+//             currentButton.innerText = "Ver información";
+//         }
+//     });
 
-    // Abrir o cerrar la tarjeta actual
-    if (card.classList.contains("active")) {
-        card.classList.remove("active");
-        description.style.display = "none";
-        button.innerText = "Ver información";
-    } else {
-        card.classList.add("active");
-        description.style.display = "block";
-        button.innerText = "Ocultar información";
-    }
-}
+//     
+// }
+
+
 
 var profile = document.querySelector('.profile__image');
 var profilePopup = document.getElementById('profile-popup');
