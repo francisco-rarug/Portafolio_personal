@@ -1,0 +1,43 @@
+[
+    {
+        "nombre": "PokeApi",
+        "descripcion": "Aplicacion creada con javaScript, Html y Css para el consumo de la PokeApi",
+        "imagen": "/Imagenes/PokeApi.webp",
+        "github": "https://github.com/francisco-rarug/PokeApi"
+    },
+    {
+        "nombre": "EA FC 25",
+        "descripcion": "Un juego que recrea el futbol real con datos de las mejores ligas del mundo",
+        "imagen": "/Imagenes/Emoji virtual.webp",
+        "github": "https://github.com/",
+        "pagina": "https://example.com"
+    },
+    {
+        "nombre": "EA FC 25",
+        "descripcion": "Un juego que recrea el futbol real con datos de las mejores ligas del mundo",
+        "imagen": "/Imagenes/Emoji virtual.webp",
+        "github": "https://github.com/",
+        "pagina": "https://example.com"
+    },
+    {
+        "nombre": "EA FC 25",
+        "descripcion": "Un juego que recrea el futbol real con datos de las mejores ligas del mundo",
+        "imagen": "/Imagenes/Emoji virtual.webp",
+        "github": "https://github.com/",
+        "pagina": "https://example.com"
+    },
+    {
+        "nombre": "EA FC 25",
+        "descripcion": "Un juego que recrea el futbol real con datos de las mejores ligas del mundo",
+        "imagen": "/Imagenes/Emoji virtual.webp",
+        "github": "https://github.com/",
+        "pagina": "https://example.com"
+    },
+    {
+        "nombre": "EA FC 25",
+        "descripcion": "Un juego que recrea el futbol real con datos de las mejores ligas del mundo",
+        "imagen": "/Imagenes/Emoji virtual.webp",
+        "github": "https://github.com/",
+        "pagina": "https://example.com"
+    }
+]

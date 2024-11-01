@@ -409,8 +409,8 @@ a {
     opacity: 1;
 }
 
+/* proyectos */
 .proyectos {
-    background-color: rgb(236, 236, 236);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -462,8 +462,7 @@ a {
 }
 
 .content h2,
-.content p,
-.btn-agregar-carrito {
+.content p {
     margin: 10px 0;
 }
 
@@ -471,36 +470,30 @@ p {
     font-size: 12px;
 }
 
-.btn-agregar-carrito {
-    background-color: #66c0f4;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: white;
-    border-radius: 5px;
-
-
-}
-
-.btn-agregar-carrito:hover {
-    background-color: #acd550;
-
-}
-
-.card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border: 2px solid white;
-    border-radius: inherit;
+.content .icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
     opacity: 0;
-    transition: 0.4s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
-.card:hover::after {
+.card:hover .icons {
     opacity: 1;
-    inset: 20px;
 }
+
+.content .icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.content .icons a:hover {
+    color: #ffcc00;
+}
+
 
 /* Estilos para las habilidades */
 .skills-container {
