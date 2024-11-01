@@ -120,14 +120,37 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: color 0.2s ease-in-out;
+    animation: menuAnimation 0.5s ease forwards;
 }
 
 .nav__menu {
     display: block;
+    animation: menuAnimation 0.5s ease forwards;
 }
 
 .menu-toggle {
     display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.menu-toggle.active {
+    animation: menuAnimation 0.5s ease forwards;
+}
+
+@keyframes menuAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+    to {
+        
+        transform: translateY(0); 
+    }
 }
 
 .header__social-icons {
@@ -223,7 +246,7 @@ body {
 }
 
 /* proyectos */
-.productos {
+.proyectos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -407,6 +430,7 @@ p {
         display: none;
     }
 
+
     .menu-toggle {
         display: block; 
         background: none;
@@ -414,12 +438,13 @@ p {
         font-size: 24px;
         cursor: pointer;
         color: #333;
+        transition: background-color 0.3s; 
     }
 
     .menu-toggle:focus {
         outline: none;
     }
-
+    
     .nav__menu.active {
         display: block; 
         background-color: #f7f7f7;
@@ -430,6 +455,7 @@ p {
         padding: 10px;
         z-index: 1000;
     }
+    
 
     .nav__list {
         flex-direction: column;

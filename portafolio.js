@@ -88,4 +88,6 @@ const navMenu = document.querySelector('.nav__menu');
 
 menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+    
 });

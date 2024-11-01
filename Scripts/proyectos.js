@@ -7,29 +7,29 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then(data => {
-            const productosContainer = document.getElementById('productos');
-            data.forEach(producto => {
+            const proyectosContainer = document.getElementById('proyectos');
+            data.forEach(proyecto => {
                 const card = document.createElement('div');
                 card.classList.add('card');
 
                 card.innerHTML = `
                         <div class="image-box">
-                            <img src="${producto.imagen}" alt="${producto.nombre}">
+                            <img src="${proyecto.imagen}" alt="${proyecto.nombre}">
                         </div>
                         <div class="content">
-                            <h2 class="data-producto">${producto.nombre}</h2>
-                            <p>${producto.descripcion}</p>
+                            <h2 class="data-proyecto">${proyecto.nombre}</h2>
+                            <p>${proyecto.descripcion}</p>
                             <div class="icons">
-                                <a href="${producto.github}" target="_blank">
+                                <a href="${proyecto.github}" target="_blank">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="${producto.pagina}" target="_blank">
+                                <a href="${proyecto.pagina}" target="_blank">
                                     <i class="fas fa-globe"></i>
                                 </a>
                             </div>
                         </div>
                     `;
-                productosContainer.appendChild(card);
+                proyectosContainer.appendChild(card);
             });
         })
         .catch(error => {

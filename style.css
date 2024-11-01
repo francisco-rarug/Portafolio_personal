@@ -124,10 +124,32 @@ body {
 
 .nav__menu {
     display: block;
+    animation: menuAnimation 0.5s ease forwards;
 }
 
 .menu-toggle {
     display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.menu-toggle.active {
+    animation: menuAnimation 0.5s ease forwards;
+}
+
+@keyframes menuAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-30px)
+    }
+    to {
+        
+        transform: translateY(0); 
+    }
 }
 
 .header__social-icons {
@@ -811,20 +833,21 @@ p {
     }
 
     .menu-toggle {
-        display: block;
+        display: block; 
         background: none;
         border: none;
         font-size: 24px;
         cursor: pointer;
         color: #333;
+        transition: background-color 0.3s; 
     }
 
     .menu-toggle:focus {
         outline: none;
     }
-
+    
     .nav__menu.active {
-        display: block;
+        display: block; 
         background-color: #f7f7f7;
         position: absolute;
         top: 100%;
@@ -833,6 +856,7 @@ p {
         padding: 10px;
         z-index: 1000;
     }
+    
 
     .nav__list {
         flex-direction: column;
