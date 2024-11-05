@@ -6,25 +6,25 @@
         "github": "https://github.com/francisco-rarug/PokeApi"
     },
     {
-        "nombre": "EA FC 25",
-        "descripcion": "Un juego que recrea el futbol real con datos de las mejores ligas del mundo",
-        "imagen": "/Imagenes/Emoji virtual.webp",
+        "nombre": "Chano",
+        "descripcion": "Un juego 2D de un robot logrado con la libreria 'pygames' de python",
+        "imagen": "/Imagenes/Chano_Juego.webp",
+        "github": "https://github.com/francisco-rarug/juego_pygame",
+        "pagina": "/Proyectos/juego_pygame.html"
+    },
+    {
+        "nombre": "GamerStacker",
+        "descripcion": "Un simulacro de tienda de venta de juegos de PC, con base de datos, nodeJs y frontend completo",
+        "imagen": "/Imagenes/GamerStacker.webp",
         "github": "https://github.com/",
         "pagina": "https://example.com"
     },
     {
-        "nombre": "EA FC 25",
-        "descripcion": "Un juego que recrea el futbol real con datos de las mejores ligas del mundo",
-        "imagen": "/Imagenes/Emoji virtual.webp",
-        "github": "https://github.com/",
-        "pagina": "https://example.com"
-    },
-    {
-        "nombre": "EA FC 25",
-        "descripcion": "Un juego que recrea el futbol real con datos de las mejores ligas del mundo",
-        "imagen": "/Imagenes/Emoji virtual.webp",
-        "github": "https://github.com/",
-        "pagina": "https://example.com"
+        "nombre": "HolyPizza",
+        "descripcion": "Un simulacro de tienda de pizzas hecha con html, css y java script",
+        "imagen": "/Imagenes/HolyPizza.webp",
+        "github": "https://github.com/francisco-rarug/22805-grupo5-holyPizza",
+        "pagina": "https://holypizza.netlify.app"
     },
     {
         "nombre": "EA FC 25",
