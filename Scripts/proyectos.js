@@ -2,15 +2,15 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch('/Scripts/proyectos.json')
         .then(response => {
             if (!response.ok) {
-                throw new Error('La respuesta no fue correcta');
+                throw new Error('La respuesta no fue correcta')
             }
-            return response.json();
+            return response.json()
         })
         .then(data => {
-            const proyectosContainer = document.getElementById('proyectos');
+            const proyectosContainer = document.getElementById('proyectos')
             data.forEach(proyecto => {
-                const card = document.createElement('div');
-                card.classList.add('card');
+                const card = document.createElement('div')
+                card.classList.add('card')
 
                 card.innerHTML = `
                         <div class="image-box">
@@ -28,12 +28,12 @@ document.addEventListener("DOMContentLoaded", () => {
                                 </a>
                             </div>
                         </div>
-                    `;
-                proyectosContainer.appendChild(card);
-            });
+                    `
+                proyectosContainer.appendChild(card)
+            })
         })
         .catch(error => {
-            console.error('Hubo un problema con la operacion de busqueda:', error);
-        });
-});
+            console.error('Hubo un problema con la operacion de busqueda:', error)
+        })
+})
 
