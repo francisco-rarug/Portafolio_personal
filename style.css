@@ -244,26 +244,49 @@ body {
 }
 
 /* Estilos para la sección "Acerca de mí" */
-.section-about {
-    padding: 100px 0;
-    background-color: #fff;
+.intro-aboutme {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f0f0f0;
+    margin-bottom: 40px;
 }
 
-.section__title {
-    font-size: 36px;
-    width: 25%;
-    transition: transform 0.3s ease;
+.titulo-aboutme {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease; 
 }
 
-.section__title:hover {
-    transform: translateY(-10px);
-    color: #004d8f;
+.titulo-aboutme::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #ff6b6b; 
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.4s ease; 
 }
 
-.section__description {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #666;
+.titulo-aboutme:hover::after {
+    width: 150px; 
+}
+
+.descripcion-aboutme {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-weight: 300;
 }
 
 .boton-descarga {
@@ -282,6 +305,8 @@ body {
     border-radius: 8px;
     cursor: pointer;
     position: relative;
+    text-decoration: none;
+    margin: 0 auto;
 }
 
 .boton-descarga svg {
@@ -926,6 +951,10 @@ p {
         text-align: center;
         width: 100%;
     }
+
+    .section__title{
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -998,5 +1027,14 @@ body.dark-mode .menu-toggle{
 
 body.dark-mode .nav__menu{
     background-color: #202020;
+    color: #ffffff;
+}
+
+body.dark-mode .intro-aboutme{
+    background-color: #202020;
+    color: #ffffff;
+}
+
+body.dark-mode .titulo-aboutme{
     color: #ffffff;
 }
