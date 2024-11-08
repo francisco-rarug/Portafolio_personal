@@ -681,6 +681,27 @@ body {
         text-align: center;
         width: 100%;
     }
+
+
+    .card1{
+        width: 150px;
+        height: 150px;
+    }
+
+    .card2{
+        width: 150px;
+        height: 150px;
+    }
+
+    .card3{
+        width: 150px;
+        height: 150px;
+    }
+
+    .card4{
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media screen and (max-width: 480px) {

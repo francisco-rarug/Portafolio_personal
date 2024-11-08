@@ -722,13 +722,38 @@ h1 {
     font-weight: 400;
 }
 
-@media screen and (max-width: 1000px) {
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1000px) { 
     .header {
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        padding: 5px;
         align-items: flex-start;
         position: relative;
+        transition: opacity 0.5s ease; 
+        animation: fadeIn 0.5s ease-out; 
+    }
+
+    .header.hidden {
+        animation: fadeOut 0.5s ease-out; 
+        opacity: 0;
     }
 
     .header__logo {
@@ -839,23 +864,18 @@ h1 {
     }
 }
 
-@media screen and (max-width: 768px) {
-
-
-    .about-container{
-        margin-top: 30%;
+@media screen and (max-width: 1000px) {
+    .skills__grid {
+        grid-template-columns: repeat(2, 1fr); 
+        margin-top: 10%;
     }
 
+    .section-title{
+        font-size: 0.5rem;
+    }
+    
     .section-skills{
         margin-top: 70%;
-    }
-
-    .experience-container{
-        margin-top: 30%;
-    }
-
-    .random-data-container{
-        margin-top: 20%;
     }
 
     .random-title{
@@ -867,17 +887,6 @@ h1 {
     }
 }
 
-@media (max-width: 768px) {
-    .skills__grid {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-}
-
-@media (max-width: 480px) {
-    .skills__grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* modo oscuro */
 .dark-mode {

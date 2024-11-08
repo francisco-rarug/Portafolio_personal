@@ -45,3 +45,29 @@ function toggleDescription(button) {
         button.textContent = "Ver información"; 
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const header = document.querySelector('.header');
+    
+    let timeout;
+
+    function hideHeader() {
+        header.classList.add('hidden');
+    }
+
+    function showHeader() {
+        header.classList.remove('hidden');
+    }
+
+    document.addEventListener('click', function() {
+        showHeader();
+        
+        clearTimeout(timeout);
+
+        timeout = setTimeout(hideHeader, 3000); 
+    });
+
+    timeout = setTimeout(hideHeader, 3000);
+});
+
+
