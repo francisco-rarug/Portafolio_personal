@@ -25,6 +25,7 @@ window.addEventListener('wheel', (event) => {
         }
     }
 });
+
 function toggleDescription(button) {
     const card = button.closest('.skill__card');
     const description = button.previousElementSibling;

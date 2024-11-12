@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <title>Proyectos</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header__profile">
@@ -35,10 +37,18 @@
 
         <nav class="nav__menu">
             <ul class="nav__list">
-                <a class="nav__link" href="/index.html"><li class="nav__item">Inicio</li></a>
-                <a class="nav__link" href="/Secciones/sobreMi.html"><li class="nav__item">Sobre Mi</li></a>
-                <a class="nav__link" href="/Secciones/proyectos.html"><li class="nav__item">Proyectos</li></a>
-                <a class="nav__link" href="/Secciones/contacto.html"><li class="nav__item">Contacto</li></a>
+                <a class="nav__link" href="/index.html">
+                    <li class="nav__item">Inicio</li>
+                </a>
+                <a class="nav__link" href="/Secciones/sobreMi.html">
+                    <li class="nav__item">Sobre Mi</li>
+                </a>
+                <a class="nav__link" href="/Secciones/proyectos.html">
+                    <li class="nav__item">Proyectos</li>
+                </a>
+                <a class="nav__link" href="/Secciones/contacto.html">
+                    <li class="nav__item">Contacto</li>
+                </a>
             </ul>
         </nav>
 
@@ -55,9 +65,11 @@
             </a>
         </div>
 
-        <button id="toggle-dark-mode" class="btn btn-outline-secondary">
-            <i class="bi bi-moon"></i> Modo Oscuro
-        </button>
+        <label class="switch" id="toggle-dark-mode">
+            <input type="checkbox" id="dark-mode-checkbox">
+            <span class="slider"></span>
+        </label>
+
     </header>
     <main>
         <section class="intro-aboutme">
@@ -124,7 +136,7 @@
                         <a href="https://github.com/francisco-rarug/22805-grupo5-holyPizza" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://holypizza.netlify.app target="_blank">
+                        <a href="https://holypizza.netlify.app target=" _blank">
                             <i class="fas fa-globe"></i>
                         </a>
                     </div>
