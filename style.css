@@ -1037,7 +1037,6 @@ p {
 
 body.dark-mode {
     background-color: #444444;
-    ;
     color: #ffffff;
 }
 
@@ -1078,6 +1077,7 @@ body.dark-mode .menu-toggle {
 }
 
 body.dark-mode .nav__menu {
+    background-color: #202020;
     color: #ffffff;
 }
 
@@ -1088,4 +1088,18 @@ body.dark-mode .intro-aboutme {
 
 body.dark-mode .titulo-aboutme {
     color: #ffffff;
+}
+
+body.dark-mode .buttonTitulo {
+    --text-stroke-color: #b3b3b3;
+    --animation-color: #000a95;
+}
+
+body.dark-mode .buttonTitulo .hover-text {
+    -webkit-text-stroke: 1px var(--animation-color);
+    border-right: var(--border-right) solid var(--animation-color);
+}
+
+body.dark-mode .buttonTitulo:hover .hover-text {
+    filter: drop-shadow(0 0 23px var(--animation-color));
 }

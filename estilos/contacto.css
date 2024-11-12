@@ -328,7 +328,8 @@ input:checked+.slider:before {
 
 
 .section-contact {
-    background: linear-gradient(135deg, #1f1c2c, #f7f7f7);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(214,214,214,1) 50%, rgba(184,184,184,1) 100%);
     padding: 80px 0;
     color: #fff;
 }
@@ -348,7 +349,7 @@ input:checked+.slider:before {
     flex-direction: column;
     max-width: 600px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #767676;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -493,7 +494,8 @@ input:checked+.slider:before {
 }
 
 .redes{
-    background: linear-gradient(135deg, #1f1c2c, #f7f7f7);
+    background: rgb(214,214,214);
+    background: linear-gradient(90deg, rgba(214,214,214,1) 0%, rgba(173,173,173,1) 34%, rgba(218,218,218,1) 64%);
     padding: 80px 0;
     color: 
     #fff;
@@ -820,6 +822,7 @@ body.dark-mode .menu-toggle{
 }
 
 body.dark-mode .nav__menu{
+    background-color: #202020;
     color: #ffffff;
 }
 
@@ -830,5 +833,19 @@ body.dark-mode .section-title{
 body.dark-mode .redes{
     background: rgb(30,26,64);
     background: radial-gradient(circle, rgba(30,26,64,1) 21%, rgba(0,0,0,1) 82%);
+}
+
+body.dark-mode .buttonTitulo {
+    --text-stroke-color: #b3b3b3; 
+    --animation-color: #000a95; 
+}
+
+body.dark-mode .buttonTitulo .hover-text {
+    -webkit-text-stroke: 1px var(--animation-color);
+    border-right: var(--border-right) solid var(--animation-color);
+}
+
+body.dark-mode .buttonTitulo:hover .hover-text {
+    filter: drop-shadow(0 0 23px var(--animation-color));
 }
 
