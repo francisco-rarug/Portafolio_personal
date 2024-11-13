@@ -414,6 +414,7 @@ input:checked+.slider:before {
     margin-bottom: 50px;
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 .section-title::after {
@@ -425,6 +426,11 @@ input:checked+.slider:before {
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.section-title:hover::after {
+    width: 140px;
 }
 
 .education-grid {
