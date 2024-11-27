@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-    background-color: #f7f7f7;
+    background-color: #333B4E;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
@@ -98,10 +98,6 @@ body {
     transition: color 0.2s ease-in-out;
 }
 
-.header__title:hover {
-    color: #ff6b6b;
-}
-
 .nav__list {
     list-style: none;
     display: flex;
@@ -115,7 +111,7 @@ body {
 
 .nav__link {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -198,7 +194,7 @@ body {
 }
 
 .nav__link:hover {
-    color: #ff6b6b;
+    color: #5C708F;
 }
 
 .buttonTitulo {
@@ -212,8 +208,8 @@ body {
 
 .buttonTitulo {
     --border-right: 6px;
-    --text-stroke-color: rgb(0, 0, 0);
-    --animation-color: #66c0f4;
+    --text-stroke-color: #fff;
+    --animation-color: #5C708F;
     --fs-size: 2em;
     letter-spacing: 3px;
     text-decoration: none;
@@ -318,7 +314,7 @@ input:checked+.slider:before {
     content: '';
     width: 80px;
     height: 4px;
-    background-color: #ff6b6b;
+    background-color: #5C708F;
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -584,7 +580,7 @@ a {
 
 /* Footer */
 .footer {
-    background-color: #1a1a1a;
+    background-color: #333B4E;
     color: #fff;
     padding: 60px 0;
 }
