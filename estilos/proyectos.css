@@ -2,13 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f0f0f0 !important;
-}
-
-section {
-    margin: 0;
-    padding: 0;
+    background-color: #D5D4CF !important;
 }
 
 .container {
@@ -18,7 +12,7 @@ section {
 }
 
 .header {
-    background-color: #f7f7f7;
+    background-color: #333B4E;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
@@ -26,10 +20,6 @@ section {
     padding: 5px;
     width: 100%;
     z-index: 2;
-    padding: 10px 20px;
-    top: 0;
-    left: 0;
-    right: 0;
 }
 
 .header__profile {
@@ -108,10 +98,6 @@ section {
     transition: color 0.2s ease-in-out;
 }
 
-.header__title:hover {
-    color: #ff6b6b;
-}
-
 .nav__list {
     list-style: none;
     display: flex;
@@ -125,12 +111,11 @@ section {
 
 .nav__link {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: color 0.2s ease-in-out;
-    animation: menuAnimation 0.5s ease forwards;
 }
 
 .nav__menu {
@@ -144,7 +129,7 @@ section {
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: #333;
+    color: #ffffff;
     transition: background-color 0.3s;
 }
 
@@ -157,9 +142,9 @@ section {
         opacity: 0;
         transform: translateY(-30px)
     }
+
     to {
-        
-        transform: translateY(0); 
+        transform: translateY(0);
     }
 }
 
@@ -209,7 +194,7 @@ section {
 }
 
 .nav__link:hover {
-    color: #ff6b6b;
+    color: #5C708F;
 }
 
 .buttonTitulo {
@@ -223,8 +208,8 @@ section {
 
 .buttonTitulo {
     --border-right: 6px;
-    --text-stroke-color: rgb(0, 0, 0);
-    --animation-color: #66c0f4;
+    --text-stroke-color: #fff;
+    --animation-color: #5C708F;
     --fs-size: 2em;
     letter-spacing: 3px;
     text-decoration: none;
@@ -306,16 +291,18 @@ input:checked+.slider:before {
 
 /* proyectos */
 
+
 .intro-proyectos {
     text-align: center;
     padding: 50px 20px;
-    background-color: #f0f0f0;
+    background-color: #D5D4CF;
     margin-bottom: 40px;
+    margin-top: 10px;
 }
 
 .titulo-proyectos {
     font-size: 2.5rem;
-    color: #333;
+    color: #5C708F;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -330,7 +317,7 @@ input:checked+.slider:before {
     content: '';
     width: 80px;
     height: 4px;
-    background-color: #66c0f4; 
+    background-color: #333B4E; 
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -344,7 +331,7 @@ input:checked+.slider:before {
 
 .descripcion-proyectos {
     font-size: 1.2rem;
-    color: #555;
+    color: #333B4E;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
@@ -467,7 +454,7 @@ p {
 
 /* Footer */
 .footer {
-    background-color: #1a1a1a;
+    background-color: #333B4E;
     color: #fff;
     padding: 60px 0;
 }
@@ -525,6 +512,7 @@ p {
     font-size: 16px;
     font-weight: 400;
 }
+
 
 /* Modo responsivo */
 
@@ -585,7 +573,7 @@ p {
         border: none;
         font-size: 24px;
         cursor: pointer;
-        color: #333;
+        color: #ffffff;
         transition: color 0.3s;
         margin: 0 auto; 
         order: 3;
@@ -598,7 +586,7 @@ p {
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #f7f7f7;
+        background-color: #262c3a;
         padding: 10px;
         z-index: 999;
     }
@@ -662,11 +650,6 @@ p {
         aspect-ratio: auto;
     }
 
-    .btn-agregar-carrito {
-        width: 70%; 
-        font-size: 0.6rem;
-    }
-
     .content h2 {
         font-size: 0.8rem; 
     }
@@ -702,7 +685,7 @@ p {
 }
 
 body.dark-mode {
-    background-color: #444444 !important;
+    background-color: #202020 !important;
     color: #ffffff;
 }
 
@@ -754,6 +737,11 @@ body.dark-mode .intro-proyectos{
 
 body.dark-mode .titulo-proyectos{
     color: #ffffff;
+}
+
+
+body.dark-mode .footer{
+    background-color: #121212;
 }
 
 body.dark-mode .buttonTitulo {

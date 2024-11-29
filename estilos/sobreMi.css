@@ -788,7 +788,7 @@ input:checked+.slider:before {
         border: none;
         font-size: 24px;
         cursor: pointer;
-        color: #333;
+        color: #ffffff;
         transition: color 0.3s;
         margin: 0 auto; 
         order: 3;
@@ -801,7 +801,7 @@ input:checked+.slider:before {
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #f7f7f7;
+        background-color: #262c3a;
         padding: 10px;
         z-index: 999;
     }
