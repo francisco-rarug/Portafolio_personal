@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,57 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <title>Sobre Mi</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="header__profile">
-            <div id="profile-popup" class="profile-popup">
-                <span class="close">&times;</span>
-                <img src="/Imagenes/1606925670701_992832461-01.jpeg" alt="Foto de perfil ampliada"
-                    class="profile-popup__image">
-            </div>
-        </div>
-        <img src="/Imagenes/1606925670701_992832461-01.jpeg" alt="Foto de perfil" class="profile__image">
-
-        <div class="header__logo">
-            <button class="buttonTitulo" data-text="Awesome">
-                <span class="actual-text">&nbsp;Informacion&nbsp;</span>
-                <span aria-hidden="true" class="hover-text">&nbsp;Informacion&nbsp;</span>
-            </button>
-        </div>
-
-        <button class="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </button>
-
-        <nav class="nav__menu">
-            <ul class="nav__list">
-                <a class="nav__link" href="/index.html"><li class="nav__item">Inicio</li></a>
-                <a class="nav__link" href="/Secciones/sobreMi.html"><li class="nav__item">Sobre Mi</li></a>
-                <a class="nav__link" href="/Secciones/proyectos.html"><li class="nav__item">Proyectos</li></a>
-                <a class="nav__link" href="/Secciones/contacto.html"><li class="nav__item">Contacto</li></a>
-            </ul>
-        </nav>
-
-        <div class="header__social-icons">
-            <a href="https://github.com/francisco-rarug" target="_blank" rel="noopener" class="social-icon">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/francisco-rarug-386942268/" target="_blank" rel="noopener"
-                class="social-icon">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://wa.me/5491156936839" target="_blank" rel="noopener" class="social-icon">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-        </div>
-
-        <label class="switch" id="toggle-dark-mode">
-            <input type="checkbox" id="dark-mode-checkbox">
-            <span class="slider"></span>
-        </label>
-
-    </header>
-    
     <main>
         <div class="nav-container">
             <div class="button" onclick="openSection(0)">
@@ -86,27 +38,66 @@
             </div>
         </div>
 
-
-        <div class="sections">
+        
             <section id="section0" class="content active">
-                
-                <div class="about-container">
-                    <img src="/Imagenes/Emoji virtual.webp" alt="Descripción de la imagen" class="about-image">
-                    <h2 class="section__title__aboutMe">Sobre mí</h2>
-                    <p class="section__description">
-                        ¡Hola! Soy Francisco, un apasionado desarrollador web con experiencia en tecnologías modernas.
+
+                <img src="/Imagenes/letter-f-svgrepo-com.svg" class="letterF" alt="">
+                <div class="hero-content">
+                    <button class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+            
+                    <nav class="nav__menu">
+                        <ul class="nav__list">
+                            <a class="nav__link" href="/index.html">
+                                <li class="nav__item">Inicio</li>
+                            </a>
+                            <a class="nav__link" href="/Secciones/sobreMi.html">
+                                <li class="nav__item">Sobre Mi</li>
+                            </a>
+                            <a class="nav__link" href="/Secciones/proyectos.html">
+                                <li class="nav__item">Proyectos</li>
+                            </a>
+                            <a class="nav__link" href="/Secciones/contacto.html">
+                                <li class="nav__item">Contacto</li>
+                            </a>
+                        </ul>
+                    </nav>
+            
+                    <div class="header__social-icons">
+                        <a href="https://github.com/francisco-rarug" target="_blank" rel="noopener" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/francisco-rarug-386942268/" target="_blank" rel="noopener"
+                            class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://wa.me/5491156936839" target="_blank" rel="noopener" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+            
+                    <label class="switch" id="toggle-dark-mode">
+                        <input type="checkbox" id="dark-mode-checkbox">
+                        <span class="slider"></span>
+                    </label>
+
+                    <h1>Sobre Mi.</h1>
+                    <p>¡Hola! Soy Francisco, un apasionado desarrollador web con experiencia en tecnologías modernas.
                         Me dedico a crear aplicaciones y sitios web que no solo sean funcionales, sino también
                         estéticamente agradables.
                         Me encanta resolver problemas complejos y ayudar a los demás a tener una experiencia intuitiva
-                        en la web.
-                    </p>
-                    <p class="section__description">
-                        Estoy siempre en búsqueda de nuevos desafíos y oportunidades para aprender.
-                        Si deseas colaborar o simplemente hablar sobre tecnología, ¡no dudes en contactarme!
-                    </p>
+                        en la web..</p>
+                    <div class="hero-details">
+                        <div>Highly skilled at progressive enhancement, design systems & UI Engineering.</div>
+                        <div>Proven experience building successful products for clients across several countries.</div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/Imagenes/Emoji virtual.webp" alt="Profile picture">
                 </div>
             </section>
-
+        
 
             <section id="section1" class="content">
                 <section class="section-skills" id="skills">
@@ -118,11 +109,13 @@
                                 <span class="iconify skill__icon" data-icon="logos:css-3" data-inline="false"></span>
                                 <h3 class="skill__title">HTML y CSS</h3>
                                 <div class="skill__description">
-                                    <p class="description__skill">Tengo conocimientos sólidos en la estructura básica de HTML, etiquetas semánticas
+                                    <p class="description__skill">Tengo conocimientos sólidos en la estructura básica de
+                                        HTML, etiquetas semánticas
                                         y el uso de elementos para crear contenido web accesible y bien estructurado.
                                         También estoy familiarizado con el uso de formularios, tablas y multimedia en
                                         HTML.</p>
-                                    <p class="description__skill">Tengo experiencia en CSS y puedo crear diseños atractivos y responsivos
+                                    <p class="description__skill">Tengo experiencia en CSS y puedo crear diseños
+                                        atractivos y responsivos
                                         utilizando hojas de estilo en cascada. Estoy familiarizado con los selectores,
                                         propiedades y valores de CSS, y puedo utilizar técnicas como flexbox y CSS Grid
                                         para crear diseños flexibles y fluidos. Además, tengo conocimientos en estilos
@@ -137,7 +130,8 @@
                                     data-inline="false"></span>
                                 <h3 class="skill__title">JavaScript</h3>
                                 <div class="skill__description">
-                                    <p class="description__skill">Tengo experiencia en JavaScript y me siento cómodo trabajando con este lenguaje
+                                    <p class="description__skill">Tengo experiencia en JavaScript y me siento cómodo
+                                        trabajando con este lenguaje
                                         de programación tanto en el frontend como en el backend. Tengo conocimientos
                                         sólidos en el uso de este lenguaje para manipular el DOM, interactuar con API,
                                         realizar peticiones AJAX y crear interacciones dinámicas en sitios web. Siempre
@@ -150,12 +144,14 @@
                                 <span class="iconify skill__icon" data-icon="logos:python" data-inline="false"></span>
                                 <h3 class="skill__title">Python</h3>
                                 <div class="skill__description">
-                                    <p class="description__skill">Estoy estudiando Python y tengo conocimientos básicos en el lenguaje. Me siento
+                                    <p class="description__skill">Estoy estudiando Python y tengo conocimientos básicos
+                                        en el lenguaje. Me siento
                                         cómodo trabajando con conceptos fundamentales como listas, diccionarios, bucles
                                         y estructuras de control. A medida que continúo mi aprendizaje, estoy emocionado
                                         por explorar áreas como la programación orientada a objetos y más cosas que me
                                         puedan sorprender.</p>
-                                    <p class="description__skill">Python es un lenguaje versátil y poderoso, y estoy entusiasmado por seguir
+                                    <p class="description__skill">Python es un lenguaje versátil y poderoso, y estoy
+                                        entusiasmado por seguir
                                         mejorando mis habilidades y aplicarlo en una amplia gama de proyectos.</p>
                                 </div>
                                 <button class="skill__button" onclick="toggleDescription(this)">Ver información</button>
@@ -165,14 +161,16 @@
                                     data-inline="false"></span>
                                 <h3 class="skill__title">C++</h3>
                                 <div class="skill__description">
-                                    <p class="description__skill">Tengo experiencia en programación en C++ y su aplicación en el entorno de
+                                    <p class="description__skill">Tengo experiencia en programación en C++ y su
+                                        aplicación en el entorno de
                                         Arduino. Utilizo este lenguaje para desarrollar proyectos de electrónica y
                                         programación de microcontroladores utilizando la plataforma Arduino. Conozco los
                                         fundamentos del lenguaje y puedo escribir código eficiente y estructurado.
                                         Utilizo la librería Arduino para acceder a los periféricos y componentes
                                         electrónicos, como sensores y actuadores, y desarrollar proyectos interactivos.
                                     </p>
-                                    <p class="description__skill">Estoy entusiasmado por seguir aprendiendo y explorando nuevas posibilidades con
+                                    <p class="description__skill">Estoy entusiasmado por seguir aprendiendo y explorando
+                                        nuevas posibilidades con
                                         este lenguaje y poder seguir adentrándome en el campo de la electrónica y la
                                         robótica.</p>
                                 </div>
@@ -182,7 +180,8 @@
                                 <span class="iconify skill__icon" data-icon="logos:c-sharp" data-inline="false"></span>
                                 <h3 class="skill__title">C#</h3>
                                 <div class="skill__description">
-                                    <p class="description__skill">Tengo experiencia en programación con C#, habiendo utilizado sus fundamentos y
+                                    <p class="description__skill">Tengo experiencia en programación con C#, habiendo
+                                        utilizado sus fundamentos y
                                         herramientas de desarrollo en Visual Studio. He aplicado estos conocimientos en
                                         la creación de una simulación de una fábrica, donde modelé diversas entidades y
                                         gestioné sus interacciones. Estoy comprometido a seguir las mejores prácticas en
@@ -197,7 +196,8 @@
                                     data-inline="false"></span>
                                 <h3 class="skill__title">Git y GitHub</h3>
                                 <div class="skill__description">
-                                    <p class="description__skill">Tengo experiencia en el uso de Git y GitHub como herramientas de control de
+                                    <p class="description__skill">Tengo experiencia en el uso de Git y GitHub como
+                                        herramientas de control de
                                         versiones y colaboración en proyectos de desarrollo. Utilizo Git para realizar
                                         un seguimiento eficiente de los cambios en el código fuente y para gestionar
                                         ramas de desarrollo de forma efectiva. Además, estoy familiarizado con los
@@ -249,43 +249,47 @@
                     <div class="tech-info-right">
                         <div class="tech-info-header">
                             <h2 class="tech-title">Mis Habilidades y Conocimientos</h2>
-                            <p class="tech-description">A continuación te presento algunas de las tecnologías con las que trabajo y las metodologías que aplico.</p>
+                            <p class="tech-description">A continuación te presento algunas de las tecnologías con las
+                                que trabajo y las metodologías que aplico.</p>
                         </div>
                         <div class="tech-details">
                             <div class="tech-detail">
-                            
+
                                 <h3 class="detail-title">JavaScript</h3>
-                                <p class="detail-text">Desarrollo aplicaciones web modernas con JavaScript, tanto del lado del cliente como del servidor.</p>
+                                <p class="detail-text">Desarrollo aplicaciones web modernas con JavaScript, tanto del
+                                    lado del cliente como del servidor.</p>
                             </div>
                             <div class="tech-detail">
-                    
+
                                 <h3 class="detail-title">React</h3>
-                                <p class="detail-text">Creo interfaces de usuario interactivas con React, aprovechando su poder para desarrollar aplicaciones escalables.</p>
+                                <p class="detail-text">Creo interfaces de usuario interactivas con React, aprovechando
+                                    su poder para desarrollar aplicaciones escalables.</p>
                             </div>
                             <div class="tech-detail">
-                                
+
                                 <h3 class="detail-title">Node.js</h3>
-                                <p class="detail-text">Utilizo Node.js para crear servidores rápidos y eficientes, ideal para aplicaciones en tiempo real.</p>
+                                <p class="detail-text">Utilizo Node.js para crear servidores rápidos y eficientes, ideal
+                                    para aplicaciones en tiempo real.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            
-            
-            
-            
-            
+
+
+
+
+
         </div>
 
 
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="/Scripts/contacto.js"></script>
-    <script src="/portafolio.js"></script>
-    <script src="/Scripts/sobreMi.js"></script>
-    <script src="/Scripts/modoOscuro.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="/Scripts/contacto.js"></script>
+        <script src="/portafolio.js"></script>
+        <script src="/Scripts/sobreMi.js"></script>
+        <script src="/Scripts/modoOscuro.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

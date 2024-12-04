@@ -310,23 +310,23 @@ input:checked+.slider:before {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 .titulo-proyectos::after {
     content: '';
     width: 80px;
     height: 4px;
-    background-color: #333B4E; 
+    background-color: #333B4E;
     position: absolute;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    transition: width 0.4s ease; 
+    transition: width 0.4s ease;
 }
 
 .titulo-proyectos:hover::after {
-    width: 150px; 
+    width: 150px;
 }
 
 .descripcion-proyectos {
@@ -342,6 +342,7 @@ input:checked+.slider:before {
     .titulo-proyectos {
         font-size: 2rem;
     }
+
     .descripcion-proyectos {
         font-size: 1rem;
     }
@@ -364,7 +365,7 @@ input:checked+.slider:before {
     overflow: hidden;
     cursor: pointer;
     border: none !important;
-        
+
 }
 
 .card .image-box {
@@ -374,16 +375,16 @@ input:checked+.slider:before {
 }
 
 .card .image-box img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: contain; 
-    object-position: center; 
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
     border-radius: 30%;
-    max-width: 100%; 
-    max-height: 100%; 
+    max-width: 100%;
+    max-height: 100%;
     transition: 0.5s ease-in-out;
     animation: fadeInScale 1s ease forwards;
-    
+
 }
 
 .card:hover img {
@@ -400,7 +401,7 @@ input:checked+.slider:before {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     z-index: 1;
-    
+
 }
 
 .card:hover .content {
@@ -443,11 +444,12 @@ p {
 @keyframes fadeInScale {
     0% {
         opacity: 0;
-        transform: scale(0.8); 
+        transform: scale(0.8);
     }
+
     100% {
         opacity: 1;
-        transform: scale(1); 
+        transform: scale(1);
     }
 }
 
@@ -531,7 +533,7 @@ p {
     }
 
     .header__social-icons {
-        margin-top: 10px; 
+        margin-top: 10px;
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
@@ -540,28 +542,28 @@ p {
 
     .header__profile {
         display: flex;
-        justify-content: center; 
-        align-items: center; 
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        margin-top: 10px; 
+        margin-top: 10px;
     }
 
     .profile__image {
-        width: 120px; 
+        width: 120px;
         height: 120px;
-        border-radius: 50%; 
+        border-radius: 50%;
         object-fit: cover;
         display: block;
-        margin: 0 auto; 
+        margin: 0 auto;
     }
 
     #toggle-dark-mode {
-        margin-top: 10px; 
+        margin-top: 10px;
         align-self: center;
     }
 
     .header__title {
-        font-size: 20px; 
+        font-size: 20px;
         text-align: center;
         width: 100%;
         margin-bottom: 10px;
@@ -575,7 +577,7 @@ p {
         cursor: pointer;
         color: #ffffff;
         transition: color 0.3s;
-        margin: 0 auto; 
+        margin: 0 auto;
         order: 3;
     }
 
@@ -615,15 +617,15 @@ p {
 
 @media screen and (max-width: 480px) {
     .header__logo img {
-        width: 35px; 
+        width: 35px;
         height: 35px;
     }
 
     .header__title {
-        font-size: 18px; 
+        font-size: 18px;
     }
 
-    .header button{
+    .header button {
         margin-top: 10%;
         margin-bottom: 10%;
     }
@@ -645,13 +647,14 @@ p {
         grid-template-columns: 1fr;
         padding: 10px;
     }
+
     .card {
         width: 100%;
         aspect-ratio: auto;
     }
 
     .content h2 {
-        font-size: 0.8rem; 
+        font-size: 0.8rem;
     }
 
     .content p {
@@ -704,49 +707,49 @@ body.dark-mode .proyectos {
     color: #ffffff;
 }
 
-body.dark-mode .h1{
+body.dark-mode .h1 {
     color: #fff;
 }
 
-body.dark-mode p{
+body.dark-mode p {
     color: #fff;
 }
 
-body.dark-mode .buttonTitulo{
+body.dark-mode .buttonTitulo {
     color: #ffffff;
 }
 
-body.dark-mode .nav__link{
+body.dark-mode .nav__link {
     color: #fff;
 }
 
-body.dark-mode .menu-toggle{
+body.dark-mode .menu-toggle {
     background-color: #090909;
     color: #ffffff;
 }
 
-body.dark-mode .nav__menu{
+body.dark-mode .nav__menu {
     background-color: #202020;
     color: #ffffff;
 }
 
-body.dark-mode .intro-proyectos{
+body.dark-mode .intro-proyectos {
     background-color: #202020;
     color: #ffffff;
 }
 
-body.dark-mode .titulo-proyectos{
+body.dark-mode .titulo-proyectos {
     color: #ffffff;
 }
 
 
-body.dark-mode .footer{
+body.dark-mode .footer {
     background-color: #121212;
 }
 
 body.dark-mode .buttonTitulo {
-    --text-stroke-color: #b3b3b3; 
-    --animation-color: #000a95; 
+    --text-stroke-color: #b3b3b3;
+    --animation-color: #000a95;
 }
 
 body.dark-mode ::-webkit-scrollbar {
@@ -766,4 +769,61 @@ body.dark-mode ::-webkit-scrollbar-track {
 }
 
 
+:root {
+    --primary-color: #623cea;
+    /* Similar a la paleta */
+    --secondary-color: #b2ff4f;
+    --text-color: white;
+    --font-title: 'Poppins', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
 
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--primary-color);
+    padding: 5rem 2rem;
+    color: var(--text-color);
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-family: var(--font-title);
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    font-family: var(--font-body);
+}
+
+.hero-details {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.hero-image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--secondary-color);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}

@@ -15,16 +15,19 @@ function openSection(index) {
     currentIndex = index;
 }
 window.addEventListener('wheel', (event) => {
-    if (event.deltaY > 0) {
-        if (currentIndex < document.querySelectorAll('.content').length - 1) {
-            openSection(currentIndex + 1);
-        }
-    } else {
-        if (currentIndex > 0) {
-            openSection(currentIndex - 1);
+    if (window.innerWidth > 768) {
+        if (event.deltaY > 0) {
+            if (currentIndex < document.querySelectorAll('.content').length - 1) {
+                openSection(currentIndex + 1);
+            }
+        } else {
+            if (currentIndex > 0) {
+                openSection(currentIndex - 1);
+            }
         }
     }
 });
+
 
 function toggleDescription(button) {
     const card = button.closest('.skill__card');
@@ -47,28 +50,27 @@ function toggleDescription(button) {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    const header = document.querySelector('.header');
-    
-    let timeout;
-
-    function hideHeader() {
-        header.classList.add('hidden');
+function handleResponsiveSections() {
+    const sections = document.querySelectorAll('.content');
+    if (window.innerWidth <= 768) {
+        sections.forEach(section => {
+            section.classList.remove('active');
+            section.style.display = 'block';
+        });
+    } else {
+        sections.forEach((section, index) => {
+            section.style.display = ''; 
+            if (index === currentIndex) {
+                section.classList.add('active');
+            } else {
+                section.classList.remove('active');
+            }
+        });
     }
+}
 
-    function showHeader() {
-        header.classList.remove('hidden');
-    }
+window.addEventListener('resize', handleResponsiveSections);
+document.addEventListener('DOMContentLoaded', handleResponsiveSections);
 
-    document.addEventListener('click', function() {
-        showHeader();
-        
-        clearTimeout(timeout);
-
-        timeout = setTimeout(hideHeader, 3000); 
-    });
-
-    timeout = setTimeout(hideHeader, 3000);
-});
 
 
