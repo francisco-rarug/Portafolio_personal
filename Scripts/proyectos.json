@@ -27,17 +27,10 @@
         "pagina": "https://holypizza.netlify.app"
     },
     {
-        "nombre": "EA FC 25",
-        "descripcion": "Un juego que recrea el futbol real con datos de las mejores ligas del mundo",
-        "imagen": "/Imagenes/Emoji virtual.webp",
-        "github": "https://github.com/",
-        "pagina": "https://example.com"
-    },
-    {
-        "nombre": "EA FC 25",
-        "descripcion": "Un juego que recrea el futbol real con datos de las mejores ligas del mundo",
-        "imagen": "/Imagenes/Emoji virtual.webp",
-        "github": "https://github.com/",
+        "nombre": "MisticaMousse",
+        "descripcion": "Simulacion de una fabrica de chocolates y donas hecha en .NET con C#",
+        "imagen": "/Imagenes/MisticaMousse.webp",
+        "github": "https://github.com/francisco-rarug/simulador_fabrica",
         "pagina": "https://example.com"
     }
 ]
