@@ -190,7 +190,6 @@ body {
     cursor: pointer;
     display: none;
     margin: 0 auto;
-    margin-bottom: 100px;
 }
 
 @media (max-width: 768px) {
@@ -304,10 +303,7 @@ input:checked+.slider:before {
     }
 
     .hero-image {
-        width: 30%;
-        height: 30%;
-        top: -42em;
-        margin: 0 auto;
+        display: none;
         
     }
 
