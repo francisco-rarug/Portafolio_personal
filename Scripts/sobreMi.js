@@ -1,4 +1,5 @@
-let currentIndex = 0; 
+let currentIndex = 0;
+
 function openSection(index) {
     const sections = document.querySelectorAll('.content');
     const buttons = document.querySelectorAll('.button');
@@ -14,20 +15,21 @@ function openSection(index) {
     buttons[index].classList.add('square');
     currentIndex = index;
 }
-window.addEventListener('wheel', (event) => {
-    if (window.innerWidth > 768) {
-        if (event.deltaY > 0) {
-            if (currentIndex < document.querySelectorAll('.content').length - 1) {
-                openSection(currentIndex + 1);
-            }
-        } else {
-            if (currentIndex > 0) {
-                openSection(currentIndex - 1);
-            }
-        }
-    }
-});
 
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav__menu');
+
+    if (toggleButton && navMenu) {
+        toggleButton.addEventListener('click', function () {
+            navMenu.classList.toggle('open');
+        });
+    } else {
+        console.error("No se encontró el botón de toggle o el menú de navegación.");
+    }
+
+    handleResponsiveSections();
+});
 
 function toggleDescription(button) {
     const card = button.closest('.skill__card');
@@ -69,8 +71,19 @@ function handleResponsiveSections() {
     }
 }
 
+window.addEventListener('wheel', (event) => {
+    if (window.innerWidth > 768) { 
+        event.preventDefault(); 
+        if (event.deltaY > 0) {
+            if (currentIndex < document.querySelectorAll('.content').length - 1) {
+                openSection(currentIndex + 1);
+            }
+        } else {
+            if (currentIndex > 0) {
+                openSection(currentIndex - 1);
+            }
+        }
+    }
+}, { passive: false });
+
 window.addEventListener('resize', handleResponsiveSections);
-document.addEventListener('DOMContentLoaded', handleResponsiveSections);
-
-
-
